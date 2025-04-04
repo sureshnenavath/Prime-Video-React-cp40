@@ -1,2 +1,6 @@
-[build.environment]
-  NODE_VERSION = "14"
+[build]
+  command = "pnpm install && pnpm build"
+  publish = "dist"  # Change this if your build output is different
+
+[context.production.environment]
+  NODE_VERSION = "18.12.0"
